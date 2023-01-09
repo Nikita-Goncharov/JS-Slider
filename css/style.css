@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.slider {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.slider img {
+    width: 58vw;
+    height: auto;
+}
+
+.slider .navigate-buttons button {
+    border: none;
+    padding: 15px 20px;
+    background-color: #1d8282;
+    color: aliceblue;
+}
+
+.slider .navigate-buttons button:hover {
+    background-color: #005c5c;
+}
+
+.navigate-buttons {
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .slider img {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .slider img {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        height: 100vh;
+        position: relative;
+    }
+
+    .slider {
+
+        position: absolute;
+        top: 20%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider img {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        height: 100vh;
+        position: relative;
+    }
+
+    .slider {
+
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider img {
+        width: 95vw;
+        height: auto;
+    }
+}
